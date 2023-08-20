@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personnel Recognition Form</title>
+    <style>
+        table{
+            background-color: rgb(156, 151, 151);
+            margin:0 auto;
+        }
+        .formheader{
+            background-color: orange;
+        }
+        textarea{
+            resize: none;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <table>
+        <tr class="formheader">
+            <td>
+                <img src="./images/avatar-men.png" alt="" width="100">
+            </td>
+            <td>PERSONNEL RECOGNITION FORM</td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <form action="result.html">
+                    <div>
+                        <label for="name">Name:</label>
+                        <br>
+                        <input type="text" id="name" name="Name">
+                    </div>
+                    <div>
+                        <label for="name">Last Name:</label>
+                        <br>
+                        <input type="text" id="lastname" name="lastname">
+                    </div>
+                    <div>
+                        <label for="age">Age:</label>
+                        <br>
+                        <input type="number" id="age" name="Age">
+                    </div>
+                    <div>
+                        <label for="email">Email: <span>*</span></label>
+                        <br>
+                        <input type="email" id="email" name="Email">
+                    </div>
+                    <div>
+                        <label for="tel">Telephone:</label>
+                        <br />
+                        <input
+                          type="tel"
+                          name="TELEPHONE"
+                          pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                          placeholder="XXX-XXX-XX-XX"
+                          id="tel"
+                        />
+                      </div>
+                      <br>
+                      <div>
+                        <label for="gender">Gender:</label>
+                        <br />
+          
+                        <input type="radio" name="GENDER" id="Female" value="Female" />
+                        <label for="female">Female</label>
+          
+                        <input type="radio" name="GENDER" id="male" value="Male" />
+                        <label for="male">Male</label>
+                      </div>
+                      <br>
+                      <div>
+                        <label for="tags">Days You Are Available:</label>
+                        <br />
+                        <input
+                          type="checkbox"
+                          name="Days"
+                          id="Saturday"
+                          value="Sunday"
+                        />
+                        <label for="saturday">Saturday</label>
+                        <input type="checkbox" name="Days" id="Sunday" value="Sunday" />
+                        <label for="Sunday">Sunday</label>
+                      </div>
+                      <br>
+                      <div>
+                        <label for="color">Favorite Color:</label>
+                        <br />
+                        <input type="color" name="COLOR" id="color" value="#456789" />
+                      </div>
+                      <br />
+                      <div>
+                        <label for="photo">Uploud Photo:</label>
+                        <br />
+                        <input type="file" name="PHOTO" id="photo" />
+                      </div>
+                      <br />
+                      <div>
+                        <label for="hobby">Hobbys:</label>
+                        <br />
+                        <select name="HOBBY" id="hobby">
+                          <option value="">Choose a hobby</option>
+                          <option value="Music">Music</option>
+                          <option value="picture">Picture</option>
+                          <option value="sport">Sport</option>
+                          <option value="cinema">Cinema</option>
+                        </select>
+                      </div>
+                      <br>
+                      <div>
+                        <label for="country">Counties You Want To See:</label>
+                        <br />
+                        <input type="text" list="country" />
+                        <datalist id="country">
+                          <option value="Germany"></option>
+                          <option value="America"></option>
+                          <option value="France"></option>
+                        </datalist>
+                      </div>
+                      <br>
+                      <div>
+                        <label for="comment">Comment:</label> <br />
+                        <textarea name="" id="" cols="40" rows="7"></textarea>
+                      </div>
+                      <br>
+                      <div>
+                        <fieldset>
+                            <legend>Personal Information</legend>
+                            <label for="">ID:</label>
+                            <input type="text" name="" id="">
+                            <br><br>
+                            <label for="">Name:</label>
+                            <input type="text" name="" id="">
+                        </fieldset>
+                    </div>
+                    <br>
+                    <div>
+                        <input type="submit" value="SAVE" />
+                        <input type="reset" value="RESET">
+                      </div>
+                </form>
+            </td>
+        </tr>
+
+    </table>
+</body>
+</html>
